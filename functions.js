@@ -72,24 +72,31 @@ const validation = () => {
   return data;
 }
 
-button.addEventListener("click", function(){
-  event.preventDefault();
-  const info = validation();
-  console.log(info);
-
-
-
-
-
-  var ajax = new XMLHttpRequest()
-     ajax.open("POST","validation.php",true)
-     ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-     ajax.send(info)
-     ajax.onreadystatechange = function(){
-         if(ajax.readyState == 4 && ajax.status == 200){
-             alert("Formulario enviado correctamente")
-             form.reset();
-             button.disabled = true;
-          }
-     }
-}, true);
+// button.addEventListener("click", function(){
+//   event.preventDefault();
+//   const info = validation();
+//   // console.log(info);
+//   let inicial = info['inicioValor'];
+//   let final = info['finValor'];
+//   let columna = info['selectValor'];
+//   // console.log(inicial);
+//   // console.log(final);
+//   // console.log(columna);
+//   const data = new FormData();
+//   data.append("inicial", inicial);
+//   data.append("final", final);
+//   data.append("columna", columna);
+//
+// // console.log(data);
+//   var ajax = new XMLHttpRequest()
+//      ajax.open("POST","http://m22.test/validation.php",true)
+//      ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+//      ajax.send(data)
+//      ajax.onreadystatechange = function(){
+//          if(ajax.readyState == 4 && ajax.status == 200){
+//              alert("Formulario enviado correctamente");
+//              form.reset();
+//              button.disabled = true;
+//           }
+//      }
+// }, true);

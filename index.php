@@ -7,12 +7,12 @@
   <meta http-equiv='cache-control' content='no-cache'>
   <meta http-equiv='expires' content='0'>
   <meta http-equiv='pragma' content='no-cache'>
-  <link rel="stylesheet" href="/css/master.css?n=1">
+  <link rel="stylesheet" href="/css/master.css?n=0">
   <title>M22 Ricardo Cáceres</title>
 </head>
 <body>
 <div class="container-fluit text-center">
-  <form method="POST" id="formulario" >
+  <form method="POST" id="formulario" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <fieldset class="form-group">
       <label class="label" for="Inicio">Fecha de Inicio</label> <br> <br>
       <input type="text" class="form-control" onchange="validation()" min="0000000" name="inicio" id="Inicio" maxlength="7" required pattern="([0-1][0-9]?)+-([0-9]{4})" value="" placeholder="MM-YYYY">
@@ -23,7 +23,7 @@
     </fieldset>
     <fieldset class="form-group">
       <label class="label" for="Columnas">Columnas:</label> <br> <br>
-      <select name="columnas" class="" id="Columnas">
+      <select name="columna" class="" id="Columnas">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -37,17 +37,16 @@
       </select>
     </fieldset>
 
-    <button type="submit" id="Button" class="btn btn-primary">Submit</button>
+    <button type="submit" id="Button" name="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 
-<div align="center">
+<div class="d-flex">
 <?php
 require ("validation.php");
-
 ?>
 </div>
 
-<script src="functions.js?n=5" charset="utf-8"></script>
+<script src="functions.js?n=0" charset="utf-8"></script>
 </body>
 </html>

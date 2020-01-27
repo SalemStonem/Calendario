@@ -36,6 +36,63 @@ select {
     font-size: large;
 }
 
+.fluit {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-10 {
+  padding: 1rem 0rem;
+  flex-basis: 10%;
+}
+.p-9 {
+  padding: 1rem 0rem;
+  flex-basis: 11.11%;
+}
+.p-8 {
+  padding: 1rem 0rem;
+  flex-basis: 12.5%;
+}
+.p-7 {
+  padding: 1rem 0rem;
+  flex-basis: 14.28%;
+}
+.p-6 {
+  padding: 1rem 0rem;
+  flex-basis: 16.66%;
+}
+.p-5 {
+  padding: 1rem 0rem;
+  flex-basis: 20%;
+}
+.p-4 {
+  padding: 1rem 0rem;
+  flex-basis: 25%;
+}
+.p-3 {
+  padding: 1rem 0rem;
+  flex-basis: 33.33%;
+}
+.p-2 {
+  padding: 1rem 0rem;
+  flex-basis: 50%;
+}
+.p-1 {
+  padding: 1rem 0rem;
+  flex-basis: 100%;
+}
 
 .container-fluit {
   display: flex;
